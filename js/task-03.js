@@ -23,7 +23,7 @@ const list = images.map((img) => {
   imgEl.height = 250;
   let item = `<li><img src=${imgEl.url} alt=${imgEl.alt} width=${imgEl.width} height=${imgEl.height}></li>`;
   return item;
-});
+}).join("");
 
 ul.insertAdjacentHTML('afterbegin', list);
 console.log(ul);
